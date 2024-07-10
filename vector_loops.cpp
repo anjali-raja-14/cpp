@@ -3,6 +3,7 @@
 using namespace std;
 int main()
 {   vector<int>numbers(10);
+//simple loop
     for(int i=0;i<numbers.size();i++)
     {
         cout<<"Enter numbers: ";
@@ -11,3 +12,6 @@ int main()
     }
     return 0;
 }
+
+
+

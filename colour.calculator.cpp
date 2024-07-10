@@ -14,6 +14,7 @@
       std::string magenta="\033[1;35m";
       std::string cyan="\033[1;36m";
       std::string blue="\033[1;94m";
+      std::string cyan_background="\033[1;46m";
     
     char choice;
     int a,b;
@@ -34,21 +35,21 @@
         cin>>a;
         cout<<italic<<underline<<"Enter the value of b: "<<reset<<reset;
         cin>>b;        
-        cout<<italic<<magenta<<"Addition : "<<a<<"+"<<b<<" = "<<(c=a+b)<<reset<<reset;
+        cout<<cyan_background<<italic<<magenta<<"Addition : "<<a<<"+"<<b<<" = "<<(c=a+b)<<reset<<reset<<reset;
         break;
         case '2':
         cout<<italic<<underline<<"Enter the value of a: "<<reset<<reset;
         cin>>a;
         cout<<italic<<underline<<"Enter the value of b: "<<reset<<reset;
         cin>>b;
-        cout<<italic<<green<<" Multiplication : "<<a<<"*"<<b<<" = "<<(d=a*b)<<reset<<reset;
+        cout<<cyan_background<<italic<<green<<" Multiplication : "<<a<<"*"<<b<<" = "<<(d=a*b)<<reset<<reset<<reset;
         break;
         case '3':
         cout<<italic<<underline<<"Enter the value of a: "<<reset<<reset;
         cin>>a;
         cout<<italic<<underline<<"Enter the value of b: "<<reset<<reset;
         cin>>b;
-        cout<<italic<<yellow<<" Division is : "<<a<<"/"<<b<<" = "<<reset<<reset;
+        cout<<cyan_background<<italic<<yellow<<" Division is : "<<a<<"/"<<b<<" = "<<reset<<reset<<reset;
         if(b==0)
         {    
             cout<<italic<<yellow<<"undefined oo"<<reset<<reset<<endl;   
@@ -63,7 +64,7 @@
         cin>>a;
         cout<<italic<<underline<<"Enter the value of b: "<<reset<<reset;
         cin>>b;
-        cout<<italic<<magenta<<" subtraction is:  "<<a<<"-"<<b<<" = "<<(f=a-b)<<reset<<reset;
+        cout<<cyan_background<<italic<<magenta<<" subtraction is:  "<<a<<"-"<<b<<" = "<<(f=a-b)<<reset<<reset<<reset;
         if(choice=='q'||choice=='Q')
         {
             cout<<italic<<blue<<"Good Bye"<<reset<<reset;
