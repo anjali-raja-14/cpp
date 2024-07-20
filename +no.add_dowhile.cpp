@@ -7,7 +7,6 @@ int main()
    {  sum=sum+n;
       cout<<"Enter a number: ";
       cin>>n;
-    
    }
    while(n>0);
      cout<<"sum:"<<sum;  
