@@ -1,7 +1,8 @@
 //2^4=?
 #include<iostream>
 using namespace std;
-int power(int n,int p)
+
+unsigned long long power(int n,int p)
 {
     if(p==0)
     {
@@ -9,6 +10,7 @@ int power(int n,int p)
     }
 return n*power(n,p-1);
 }
+
 int main()
 {
 int n,p;
